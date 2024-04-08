@@ -1,14 +1,10 @@
 /* search.css */
 
-/* Body background color */
 body {
-    background-color: #ffffcc; /* yellow */
-}
-
-/* Navigation container */
-.navigation-container {
-    background-color: #3366ff; /* blue */
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation links */

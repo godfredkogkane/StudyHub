@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <!-- Include your JavaScript file -->
     <script src="../js/dashboard.js"></script>
+    <!-- <script src="../js/dashboard_review.js"></script> -->
 </head>
 <body>
     <!-- Navigation -->
@@ -49,7 +50,10 @@
 
         <!-- Document data container -->
         <div id="documentDataContainer">
-            <!-- Document data will be inserted here -->
+        <!-- Document data will be inserted here -->
+        <div id="reviewsContainer">
+        <!-- Reviews will be inserted here -->
+            </div>
         </div>
     </div>
 </body>

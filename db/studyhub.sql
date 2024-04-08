@@ -19,16 +19,6 @@ CREATE TABLE Users (
     UNIQUE(Email)
 );
 
--- Create Documents table
-CREATE TABLE Documents (
-    DocumentID INT AUTO_INCREMENT PRIMARY KEY,
-    UserID INT NOT NULL,
-    Title VARCHAR(255) NOT NULL,
-    Doc_description TEXT,
-    UploadDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FilePath VARCHAR(255) NOT NULL,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID)
-);
 CREATE TABLE DocumentStorage (
     DocumentID INT AUTO_INCREMENT PRIMARY KEY,
     Title VARCHAR(255) NOT NULL,
@@ -45,7 +35,7 @@ CREATE TABLE DocumentVersions (
     VersionNumber INT,
     UploadDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FilePath VARCHAR(255) NOT NULL,
-    FOREIGN KEY (DocumentID) REFERENCES Documents(DocumentID)
+    FOREIGN KEY (DocumentID) REFERENCES DocumentStorage(DocumentID)
 );
 
 -- Create Annotations table
@@ -57,7 +47,7 @@ CREATE TABLE Annotations (
     AnnotationText TEXT,
     AnnotationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (DocumentID) REFERENCES Documents(DocumentID)
+    FOREIGN KEY (DocumentID) REFERENCES DocumentStorage(DocumentID)
 );
 
 -- Create Tags table
@@ -71,7 +61,7 @@ CREATE TABLE DocumentTags (
     DocumentTagID INT AUTO_INCREMENT PRIMARY KEY,
     DocumentID INT NOT NULL,
     TagID INT NOT NULL,
-    FOREIGN KEY (DocumentID) REFERENCES Documents(DocumentID),
+    FOREIGN KEY (DocumentID) REFERENCES DocumentStorage (DocumentID),
     FOREIGN KEY (TagID) REFERENCES Tags(TagID)
 );
 
@@ -84,11 +74,11 @@ CREATE TABLE Reviews (
     ReviewText TEXT,
     ReviewDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (DocumentID) REFERENCES Documents(DocumentID)
+    FOREIGN KEY (DocumentID) REFERENCES DocumentStorage(DocumentID)
 );
 
 -- Alter DocumentVersions table to add a foreign key constraint
 ALTER TABLE DocumentVersions
 ADD CONSTRAINT FK_DocumentVersions_Documents
 FOREIGN KEY (DocumentID)
-REFERENCES Documents(DocumentID);
+REFERENCES DocumentStorage(DocumentID);

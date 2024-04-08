@@ -62,7 +62,8 @@
                     echo "<h2>Search Results</h2>";
                     echo "<ul>";
                     while($row = $result->fetch_assoc()) {
-                        echo "<li>" . $row['Title'] . " - <a href='../action/download_document.php?id=" . $row["DocumentID"] . "'>Download</a></li>";
+                        // Add a link to the review page with document_id as GET parameter
+                        echo "<li>" . $row['Title'] . " - <a href='review.php?document_id=" . $row["DocumentID"] . "'>Submit Review</a> - <a href='../action/download_document.php?id=" . $row["DocumentID"] . "'>Download</a></li>";
                     }
                     echo "</ul>";
                 } else {
