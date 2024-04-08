@@ -1,0 +1,58 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3; /* Blue header background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Search Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #f7941d; /* Orange button background */
+    border: none;
+    padding: 10px 20px;
+    color: #fff; /* White text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ffae42; /* Lighter orange on hover */
+}
+
+/* Search Results Styles */
+#searchResults {
+    margin-top: 20px;
+}

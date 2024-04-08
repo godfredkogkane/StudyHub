@@ -1,0 +1,56 @@
+/* dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+h1 {
+    color: #007bff; /* Blue heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #dee2e6; /* Light gray border */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternate row color */
+}
+
+.btn-primary {
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    padding: 10px 20px;
+    color: #fff; /* White text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ffcd38; /* Lighter yellow on hover */
+}
+

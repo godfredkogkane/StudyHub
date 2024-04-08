@@ -1,0 +1,61 @@
+/* upload.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+h2 {
+    color: #007bff; /* Blue heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+select {
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none; /* Remove default dropdown arrow for Safari */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23303030' d='M6 8L0 0h12L6 8zm0-2.59L9.5 2 6 5.59 2.5 2z'/%3E%3C/svg%3E"); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="submit"] {
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    padding: 10px 20px;
+    color: #fff; /* White text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcd38; /* Lighter yellow on hover */
+}
