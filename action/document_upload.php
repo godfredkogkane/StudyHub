@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if all required fields are filled
     if(isset($_POST['title']) && isset($_FILES['file'])) {
         $title = $_POST['title'];
-        $userID = $_SESSION['UserID']; // Get the UserID from the session
+        $userID = $_SESSION['user_id']; // Get the UserID from the session
 
         // File upload handling
         $file_name = $_FILES['file']['name'];
