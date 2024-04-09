@@ -2,10 +2,17 @@
 // Include your database connection file
 include "../settings/connection.php";
 
+// Include your core script
+include "../settings/core.php";
+
+// Check if the user is authenticated
+check_login();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if all required fields are filled
     if(isset($_POST['title']) && isset($_FILES['file'])) {
         $title = $_POST['title'];
+        $userID = $_SESSION['UserID']; // Get the UserID from the session
 
         // File upload handling
         $file_name = $_FILES['file']['name'];
@@ -16,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Read the file content
         $file_content = file_get_contents($file_temp);
 
-        // Insert document information into DocumentStorage table
-        $sql = "INSERT INTO DocumentStorage (Title, FileType, DocumentData) VALUES (?, ?, ?)";
+        // Insert document information into DocumentStorage table with the UserID
+        $sql = "INSERT INTO DocumentStorage (UserID, Title, FileType, DocumentData) VALUES (?, ?, ?, ?)";
         $stmt = $con->prepare($sql);
-        $stmt->bind_param("sss", $title, $file_type, $file_content);
+        $stmt->bind_param("isss", $userID, $title, $file_type, $file_content);
 
         if ($stmt->execute() === TRUE) {
             // Redirect to dashboard after successful upload

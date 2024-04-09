@@ -2,13 +2,20 @@
 // Include your database connection file
 include "../settings/connection.php";
 
-// Fetch document data along with their reviews from the database
+// Check login status
+include "../settings/core.php";
+check_login();
+
+$userID = $_SESSION['user_id']; // Get the UserID from the session
+
+// Fetch documents uploaded by the user and reviews given by other users on those documents
 $sql = "SELECT d.DocumentID, d.Title, r.Rating, r.ReviewText
         FROM DocumentStorage d
-        LEFT JOIN Reviews r ON d.DocumentID = r.DocumentID";
+        LEFT JOIN Reviews r ON d.DocumentID = r.DocumentID
+        WHERE d.UserID = $userID";
 $result = $con->query($sql);
 
-// Check if there are any documents with reviews
+// Check if there are any documents and reviews
 if ($result->num_rows > 0) {
     // Output table header
     echo "<table class='table'>";
@@ -39,5 +46,6 @@ if ($result->num_rows > 0) {
 } else {
     echo "No documents found";
 }
+
 $con->close();
 ?>

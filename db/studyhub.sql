@@ -21,11 +21,14 @@ CREATE TABLE Users (
 
 CREATE TABLE DocumentStorage (
     DocumentID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT,
     Title VARCHAR(255) NOT NULL,
     FileType ENUM('PDF', 'Word') NOT NULL,
     DocumentData LONGBLOB NOT NULL,
-    UploadDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    UploadDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
+
 
 
 -- Create DocumentVersions table
