@@ -34,7 +34,7 @@ form {
 /* Search button */
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #3366ff; /* blue */
+    background-color: #ffc107; /* blue */
     color: #fff; /* white */
     border: none;
     border-radius: 5px;
@@ -42,5 +42,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0033cc; /* darker blue */
+    background-color: #ffcd38; /* darker blue */
 }

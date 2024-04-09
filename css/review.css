@@ -1,0 +1,55 @@
+/* document_review.css */
+
+/* Body */
+body {
+    background-color: #f9f9f9; /* Light gray */
+    color: #333; /* Dark gray */
+    font-family: Arial, sans-serif;
+}
+
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    color: #333; /* Dark gray */
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #ffc107; /* Yellow */
+    border-color: #ffc107; /* Yellow */
+}
+
+.btn-primary:hover {
+    background-color: #ffcd38; /* Lighter yellow on hover */
+    border-color: #ffcd38; /* Lighter yellow on hover */
+    color: #333; /* Dark gray on hover */
+}
+
+/* Rating */
+#rating {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Review Textarea */
+#review {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 150px;
+}
