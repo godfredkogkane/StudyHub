@@ -42,7 +42,7 @@
                 <li>Collaborative learning environment to connect with classmates, share insights, and work on group projects.</li>
                 <li>Personalized learning recommendations based on individual study habits and performance.</li>
             </ul>
-            <img src="../studyhub/img/study-group.jpg" alt="Students Learning Image">
+            <img src="../img/study-group.jpg" alt="Students Learning Image">
         </div>
     </section>
 
