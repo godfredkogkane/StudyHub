@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
-    <header>
-        <h1>Create New Account</h1>
+<div class="navigation-container">
+    <header class="bg-primary py-3 mb-4">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Studyhub</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                    <!-- New "Register" navigation link -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+</div>
     <main>
         <div class="container">
             <!-- Register form -->

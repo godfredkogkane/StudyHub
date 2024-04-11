@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <header>
-        <h1>Study Hub</h1>
+<div class="navigation-container">
+    <header class="bg-primary py-3 mb-4">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Studyhub</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.php">Home</a>
+                    </li>
+                    <!-- New "Register" navigation link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+</div>
     <main>
         <div class="container">
             <!-- Login form -->

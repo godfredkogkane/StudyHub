@@ -8,14 +8,6 @@ body {
     padding: 0;
 }
 
-/* Header styles */
-header {
-    background-color: #0056b3; /* Blue */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
 /* Main styles */
 main {
     display: flex;

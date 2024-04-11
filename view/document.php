@@ -25,9 +25,6 @@
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="document.php">Upload Document</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="search_document.php">Search Documents</a>
                     </li>
                     <li class="nav-item">

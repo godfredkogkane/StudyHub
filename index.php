@@ -23,7 +23,7 @@
                     </li>
                     <!-- New "Register" navigation link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../studyhub/register/register.php">Register</a>
+                        <a class="nav-link" href="../studyhub/login/register.php">Register</a>
                     </li>
                 </ul>
             </div>

@@ -19,7 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("iiss", $user_id, $document_id, $rating, $review_text);
 
     if ($stmt->execute() === TRUE) {
-        echo "Review submitted successfully.";
+        // Redirect to the search_document.php page
+        header("Location: ../view/search_document.php");
+        exit; // Ensure that no other output is sent
     } else {
         echo "Error submitting review: " . $con->error;
     }

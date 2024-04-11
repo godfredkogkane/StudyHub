@@ -28,9 +28,6 @@
                         <a class="nav-link" href="document.php">Upload Document</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="search_document.php">Search Documents</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="../login/logout.php">Logout</a>
                     </li>
                 </ul>
