@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studyhub</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -27,8 +27,12 @@
     <section class="hero">
         <div class="container text-center">
             <h1>Welcome to Studyhub</h1>
-            <p>A data-powered website to help students solve the problem of inefficient study resources and collaboration.</p>
-            <img src="studyhub-logo.png" alt="Studyhub Logo">
+            <p>A data-powered website to help students solve the problem of inefficient study resources and collaboration. Studyhub provides a comprehensive platform where students can access high-quality educational materials, collaborate with peers, and optimize their learning experience.</p>
+            <p>Why choose Studyhub?</p>
+            <p>1. Access to a vast library of study materials, including textbooks, lecture notes, and practice exams.</p>
+            <p>2. Collaborative learning environment to connect with classmates, share insights, and work on group projects.</p>
+            <p>3. Personalized learning recommendations based on individual study habits and performance.</p>
+            <img src="../img/study-group.jpg" alt="Students Learning Image">
         </div>
     </section>
 
