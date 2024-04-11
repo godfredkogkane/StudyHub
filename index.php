@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studyhub</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../studyhub/css/home.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 <div class="navigation-container">
@@ -19,11 +19,11 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../studyhub/login/login.php">Login</a>
+                        <a class="nav-link" href="../login/login.php">Login</a>
                     </li>
                     <!-- New "Register" navigation link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../studyhub/login/register.php">Register</a>
+                        <a class="nav-link" href="../login/register.php">Register</a>
                     </li>
                 </ul>
             </div>
